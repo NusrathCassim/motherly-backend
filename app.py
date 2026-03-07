@@ -308,24 +308,22 @@ def server_error(e):
 
 if __name__ == '__main__':
     print("\n" + "="*60)
-    print("🚀 MOTHERLY BACKEND SERVER")
+    print("MOTHERLY BACKEND SERVER")
     print("="*60)
-    print(f"📍 Python version: {os.sys.version}")
-    print(f"📍 TensorFlow available: {TENSORFLOW_AVAILABLE}")
-    print(f"📍 TensorFlow version: {tf.__version__ if TENSORFLOW_AVAILABLE else 'N/A'}")
-    print(f"📍 Model path: {MODEL_PATH}")
-    print(f"📍 Model exists: {os.path.exists(MODEL_PATH)}")
-    print(f"📍 Model loaded: {model is not None}")
+    print(f" Python version: {os.sys.version}")
+    print(f" TensorFlow available: {TENSORFLOW_AVAILABLE}")
+    print(f" TensorFlow version: {tf.__version__ if TENSORFLOW_AVAILABLE else 'N/A'}")
+    print(f" Model path: {MODEL_PATH}")
+    print(f" Model exists: {os.path.exists(MODEL_PATH)}")
+    print(f" Model loaded: {model is not None}")
     if model is None:
-        print("📍 " + "⚠️" * 15)
-        print("📍 ⚠️  MODEL NOT LOADED!  ⚠️")
-        print("📍 " + "⚠️" * 15)
-        print(f"📍 Please place your model file at: {MODEL_PATH}")
-        print(f"📍 Make sure the file name is: motherly_model_final.h5")
+        print("  MODEL NOT LOADED! ")
+        print(f" Please place your model file at: {MODEL_PATH}")
+        print(f" Make sure the file name is: motherly_model_final.h5")
     else:
-        print(f"📍 Model loaded successfully! ✅")
-    print(f"📍 Server URL: http://localhost:5000")
-    print(f"📍 Press CTRL+C to stop")
+        print(f" Model loaded successfully!")
+    print(f" Server URL: http://localhost:5000")
+    print(f" Press CTRL+C to stop")
     print("="*60 + "\n")
     
     app.run(
