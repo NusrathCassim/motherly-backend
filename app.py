@@ -39,7 +39,7 @@ os.makedirs(app.config['UPLOAD_FOLDER'], exist_ok=True)
 # MODEL CONFIGURATION
 # ===============================
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-MODEL_PATH = os.path.join(BASE_DIR,'modelv1.keras') 
+MODEL_PATH = os.path.join(BASE_DIR,'motherly_skin_model.keras') 
 IMG_SIZE = 224
 
 CLASS_NAMES = [
